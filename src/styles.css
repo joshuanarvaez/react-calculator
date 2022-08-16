@@ -1,23 +1,31 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
-}
+  }
 
 body {
     margin: 0;
-    background: linear-gradient(to right, #c33764, #1d2671);
+    background: linear-gradient(to right, #c33764  , #1d2671);
+    font: 32px "Century Gothic", Futura, sans-serif;
+
 }
 
+.calculator-title {
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    margin-left: 60px;
+}
 .calculator-grid {
     display: grid;
-    margin: 1rem 0 1rem 0;
     justify-content: center;
-    grid-template-columns: repeat(4, 6rem);
-    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    margin-bottom: 5rem;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(5rem, auto) repeat(6, 5rem);
 }
 
 .calculator-grid>button {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
